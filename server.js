@@ -18,8 +18,10 @@ REMEMBER !!!!
     2) USE --> encryptPassword(req.body.password) when making requests below
  */
 
+// My Heroku URL = https://vino-di-stella.herokuapp.com/
 
-app.get('/test', (req, res) => {
+
+app.get('/api/test', (req, res) => {
     console.log('Testing GET 123');
     res.status(200).json({success: true});
 })
@@ -27,7 +29,7 @@ app.get('/test', (req, res) => {
 
 //Just created a test user to see if it goes to my user table (no front-end setup yet)
 //It worked!
-app.post('/createProfile', (req, res) => {
+app.post('/api/createProfile', (req, res) => {
     db.user.findAll({where: {email: req.body.email}})
     .then((users) => {
         if(users.length !== 0) {
