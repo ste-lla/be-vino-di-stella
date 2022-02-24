@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "postgresdb",
-    "database": "vinoDiStella",
-    "host": "127.0.0.1",
+    "username": "ydhdvngjzpovdm",
+    "password": "8e78ecd0b51925c0db168746e586f14fbef0e33a0d0bd34cdb687c6a59ea0e3a",
+    "database": "d8f10lkbouvthd",
+    "host": "ec2-52-207-74-100.compute-1.amazonaws.com",
     "dialect": "postgres"
   },
   "test": {
